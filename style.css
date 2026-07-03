@@ -49,14 +49,57 @@ header { background-color: var(--primary); position: sticky; top: 0; z-index: 10
 .bio { color: var(--text-muted); max-width: 720px; margin-bottom: 2rem; font-size: 1.05rem; text-align: justify; }
 
 /* Buttons UI */
-.cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; padding: 0.65rem 1.35rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
-.btn-primary { background-color: var(--accent); color: var(--bg-white); }
-.btn-primary:hover { background-color: var(--accent-hover); }
-.btn-outline { border: 1.5px solid var(--primary); color: var(--primary); }
-.btn-outline:hover { background-color: var(--primary); color: var(--bg-white); }
 
-/* Homepage Clean Skills Layout (image_4c4420.png style) */
+/* Homepage Clean Skills Layout (image_4c4420.png style) *//* Clean Symmetry Button Framework */
+.cta-group { 
+    display: flex; 
+    gap: 1.25rem; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    height: 44px; /* Perfectly aligns heights */
+}
+
+/* Primary Color Button */
+.btn-primary { 
+    background-color: var(--accent); 
+    color: var(--bg-white);
+    border: 1px solid var(--accent);
+}
+.btn-primary:hover { 
+    background-color: var(--accent-hover); 
+    border-color: var(--accent-hover);
+}
+
+/* Styled Outlined Buttons */
+.btn-outline { 
+    border: 1.5px solid #cbd5e1; 
+    color: var(--text-main); 
+    background-color: var(--bg-white);
+}
+
+.btn-outline.linkedin-btn:hover {
+    color: #0077b5;
+    border-color: #0077b5;
+    background-color: #f0f7fa;
+}
+
+.btn-outline.github-btn:hover {
+    color: #24292e;
+    border-color: #24292e;
+    background-color: #f6f8fa;
+}
 .skills-showcase-grid { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
 .skills-card { background: var(--bg-white); border: 1px solid var(--border); padding: 2.25rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.01); }
 .skills-card h3 { font-size: 1.15rem; color: var(--primary); margin-bottom: 1.5rem; border-left: 3px solid var(--accent); padding-left: 10px; }
